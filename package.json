@@ -1,0 +1,32 @@
+{
+  "name": "adobesign-demo",
+  "version": "0.1.0",
+  "description": "Simple example to handle Adobe Sign callback",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --source-maps",
+    "dev": "node -r dotenv/config -r babel-register src",
+    "start": "node -r dotenv/config dist"
+  },
+  "keywords": [
+    "base",
+    "javascript",
+    "node.js"
+  ],
+  "author": "Jake Klassen",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015-node6": "^0.2.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "eslint": "^2.9.0",
+    "localhost.daplie.com-certificates": "^1.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "passport": "^0.3.2",
+    "passport-echosign": "0.0.2"
+  }
+}
